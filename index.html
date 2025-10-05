@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Weather Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Royal Weather</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Royal Weather Blog</h1>
+        <nav>
+            <h1>Royal Weather</h1>
+            <ul>
+                <li><a href="#forecast">Forecast</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
     </header>
-    <main id="posts-container">
-        <h2>Latest Posts</h2>
-        <ul>
-            <li><a href="posts/sample-post.html">Sample Post: The Future of Weather Prediction</a></li>
-        </ul>
+
+    <main>
+        <section id="forecast">
+            <h2>Weather Forecast</h2>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter a city">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="weather-info"></div>
+        </section>
+
+        <section id="product">
+            <h2>Our Product</h2>
+            <p>Discover our amazing weather app!</p>
+        </section>
+
+        <section id="education">
+            <h2>Learn About Weather</h2>
+            <p>Read our articles on meteorology.</p>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Royal Weather Corporation</p>
+        <p>&copy; 2025 Royal Weather. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
